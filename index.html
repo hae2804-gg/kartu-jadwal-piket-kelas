@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fokus Ngoding</title>
+	<link rel="stylesheet"href="style.css">
+</head>
+<body>
+	<div class="card">
+		<div class="badge">🚀✈🛫🛬🛩🚗🏎🚔🚙🚓🚘Sesi Potret</div>
+		<h2>Ayo Coding 25 Menit!</h2>
+		<p class="subtitle">Jauhkan distraksi, selesaikansatu baris kode.</p>
+
+		<div class="timer-box">
+			<span>23:20</span>
+		</div>
+
+		<button class="btn-primary">Mulai Sesi 🔥🔥🔥🔥🔥🔥🔥🔥</button>
+	</div>
+<script>
+	let waktu = 25 * 60;
+	let timerinterval;
+
+	function mulaitimer() {
+		clearinterval(timerinterval);
+
+		waktu = 25 * 60;
+
+		timerinterval() {
+
+			let menit = math.floor(waktu / 60);
+			let detik = waktu % 60;
+
+			menit = menit < 10 ? "0" + menit : menit;
+			detik = detik < 10 ? "0" + detik : detik;
+
+			document.getelementbyid("timer").textcontent =
+				menit + ":" + detik;
+
+			if (waktu <= 0) {
+				clearinterval(timerinterval);
+				alert("🔥 sesi fokus selesai! istirahat sebentar.");
+			}
+
+			waktu--;
+
+		}, 1000);
+	}
+  </script>
+
+</body>
+</html>
