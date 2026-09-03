@@ -1,53 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fokus Ngoding</title>
-	<link rel="stylesheet"href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Piket Kelas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="card">
-		<div class="badge">🚀✈🛫🛬🛩🚗🏎🚔🚙🚓🚘Sesi Potret</div>
-		<h2>Ayo Coding 25 Menit!</h2>
-		<p class="subtitle">Jauhkan distraksi, selesaikansatu baris kode.</p>
 
-		<div class="timer-box">
-			<span>23:20</span>
-		</div>
+    <div class="schedule-card">
+        <div class="badge-piket">✨ Tim Kebersihan</div>
+        <h2>Piket Hari Senin</h2>
+        <p class="subtitle">Kelas XI RPL - Jaga kebersihan kelas kita!</p>
 
-		<button class="btn-primary">Mulai Sesi 🔥🔥🔥🔥🔥🔥🔥🔥</button>
-	</div>
-<script>
-	let waktu = 25 * 60;
-	let timerinterval;
+        <ul class="member-list">
+            <li>🧹 Ahmad Rifki</li>
+            <li>🤝 Aulia</li>
+            <li>Andi Asyraf</li>
+            <li>🗑️ Yuandi</li>
+        </ul>
 
-	function mulaitimer() {
-		clearinterval(timerinterval);
-
-		waktu = 25 * 60;
-
-		timerinterval() {
-
-			let menit = math.floor(waktu / 60);
-			let detik = waktu % 60;
-
-			menit = menit < 10 ? "0" + menit : menit;
-			detik = detik < 10 ? "0" + detik : detik;
-
-			document.getelementbyid("timer").textcontent =
-				menit + ":" + detik;
-
-			if (waktu <= 0) {
-				clearinterval(timerinterval);
-				alert("🔥 sesi fokus selesai! istirahat sebentar.");
-			}
-
-			waktu--;
-
-		}, 1000);
-	}
-  </script>
+        <div class="footer-note">Semangat membersihkan! 🌟</div>
+    </div>
 
 </body>
 </html>
